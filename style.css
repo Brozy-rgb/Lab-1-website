@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: Geologica, sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 60px;
+    background-color: #151E3F;
+}
+
+#hamburger {
+    display: flex;
+    align-items: flex-start;
+    display: none;
+}
+
+.logo {
+    padding-left: 20em;
+}
+
+.slideout {
+    display: flex;
+    text-align: flex-start;
+    justify-content: space-between;
+}
