@@ -205,3 +205,232 @@ nav {
         transform: scale(1.12);
     }
 }
+
+.p2 {
+    padding: 4em 2em;
+    background-color: #FA9589;
+}
+
+.p2 h2 {
+    font-size: 2em;
+    font-family: Geologica, sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.p2-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.p2-img img {
+    width: clamp(20em, 60vw, 40em);
+    height: auto;
+    display: block;
+}
+
+.p2 p {
+    font-size: 1em;
+    font-family: Geologica, sans-serif;
+    line-height: 1em;
+    margin-top: 1.5em;
+    max-width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.p3 {
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.p3 h2 {
+    font-size: 2em;
+    font-family: Geologica, sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.p3 p {
+    font-size: 1em;
+    font-family: Geologica, sans-serif;
+    line-height: 1.6em;
+    margin-bottom: 1.5em;
+    max-width: 40em;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p3-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.p3-img img {
+    width: clamp(20em, 60vw, 40em);
+    height: auto;
+    display: block;
+    margin-top: 2em;
+}
+
+.btn-phone {
+    background: #FA9589;
+    color: white;
+    font-weight: 600;
+    padding: 0.8em 1.6em;
+    border-radius: 2em;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-family: Geologica, sans-serif;
+    display: inline-block;
+    margin-top: 2em;
+}
+
+.ideeen {
+    padding: 4em 2em;
+    background-color: #FA9589;
+    text-align: center;
+}
+
+.ideeen h2 {
+    font-size: 2em;
+    font-family: Geologica, sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.ideeen p {
+    font-size: 1em;
+    font-family: Geologica, sans-serif;
+    line-height: 1.6em;
+    margin-bottom: 1.5em;
+    max-width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.typ-ideeen {
+    background-color: #151e3f;
+    padding: 0.8em 1em;
+    border-radius: 2em;
+    border: none;
+    font-size: 1em;
+    width: 60%;
+    max-width: 20em;
+    margin-right: 1em;
+    margin-top: 2em;
+}
+
+.btn-ideeen {
+    background: #151e3f;
+    color: white;
+    font-weight: 600;
+    padding: 0.8em 1.6em;
+    border-radius: 2em;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-family: Geologica, sans-serif;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+.waarden {
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.waarden h2 {
+    font-size: 2em;
+    font-family: Geologica, sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}   
+
+.waarden h3 {
+    font-size: 1.5em;
+    font-family: Geologica, sans-serif;
+    font-weight: 600;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+.waarden p {
+    font-size: 1em;
+    font-family: Geologica, sans-serif;
+    line-height: 1.6em;
+    margin-bottom: 1.5em;
+    max-width: 20em;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact {
+    padding: 4em 2em;
+    background-color: #151e3f;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2em;
+    font-family: Geologica, sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.contact c form {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.contact label {
+    font-size: 1em;
+    font-family: Geologica, sans-serif;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+.contact input, .contact textarea {
+    width: 80%;
+    max-width: 20em;
+    padding: 0.8em 1em;
+    border-radius: 2em;
+    border: none;
+    font-size: 1em;
+    font-family: Geologica, sans-serif;
+}
+
+.contact button {
+    background: #FA9589;
+    color: white;
+    font-weight: 600;
+    padding: 0.8em 1.6em;
+    border-radius: 2em;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-family: Geologica, sans-serif;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+
+
+
+footer {
+    background: #151e3f;
+    color: white;
+    text-align: center;
+    padding: 2em 1em;
+    font-size: 0.9em;
+}
