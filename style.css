@@ -135,7 +135,7 @@ nav {
 
 .home-img {
    margin-top: -15em;
-   padding-left: 6.5em;
+   padding-left: 0;
    margin-bottom: -0.25em;
    height: 37em;
 }
@@ -426,11 +426,33 @@ nav {
 }
 
 footer {
-    background: #151e3f;
-    color: white;
-    text-align: center;
-    padding: 2em 1em;
-    font-size: 0.9em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    background-color: #151e3f;
+    padding: 1em 1em;
+    flex-wrap: wrap;
+}
+
+.footer-text {
+    font-family: Geologica, sans-serif;
+    flex: 1 1 0;
+    min-width: 8em;
+}
+
+@media (min-width: 48em) {
+    footer {
+        gap: 2em;
+        padding: 2em 3em;
+    }    
+}
+
+@media (min-width: 64em) {
+    footer {
+        gap: 3em;
+        padding: 3em 4em;
+    }
 }
 
 
