@@ -112,7 +112,7 @@ nav {
 }   
       
 .p1{
-    padding-left: 3em;
+    padding-left: 2em;
     padding-top: 4em;
     background: #151e3f;
     background-image: url(images/rain.png);
@@ -134,7 +134,7 @@ nav {
 }
 
 .home-img {
-   margin-top: -15em;
+    margin-top: -15em;
    padding-left: 0;
    margin-bottom: -0.25em;
    height: 37em;
@@ -350,7 +350,7 @@ nav {
     font-size: 1em;
     outline: none;
     margin: 2em;
-    width: 25em;
+    width: 20em;
     color: white;
     caret-color: white;
 
@@ -370,7 +370,7 @@ nav {
     font-size: 1em;
     outline: none;
     margin: 2em;
-    width: 25em;
+    width: 20em;
     height: 10em;
     color: white;
     caret-color: white;
@@ -431,7 +431,7 @@ footer {
     align-items: center;
     gap: 1em;
     background-color: #151e3f;
-    padding: 1em 1em;
+    padding: 1em 2em;
     flex-wrap: wrap;
 }
 
