@@ -111,120 +111,46 @@ nav {
     font-size: 2em;
 }   
       
-.p1 {
-    position: relative;
+.p1{
+    padding-left: 3em;
+    padding-top: 4em;
     background: #151e3f;
+    background-image: url(images/rain.png);
+    background-size: cover;
+}
+
+.p1 h1{
     color: white;
-    overflow: clip;
-    padding: clamp(2em, 6vw, 4.5em) clamp(1em, 5vw, 2em);
-    min-height: clamp(70vh, 85vh, 100vh);
-    display: grid;
-    align-items: center;
-}
+    font-size: 3em;
 
-.p1-content {
-    min-width: 62ch;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.p1 h1 {
-    font-family: Geologica, sans-serif;
-    font-weight: 700;
-    font-size: clamp(2em, 4.5vw, 3.25em);
-    line-height: 1.15em;
-    margin: 0 0 0.75em;
 }
 
 .p1 p {
-    font-family: Geologica, sans-serif;
-    font-size: clamp(1em, 2.1vw, 1.125em);
-    line-height: 1.7em;
-    opacity: 0.95;
-    margin: 0 0 1.5em;
-}
-
-.btn-primary {
-    background: #FA9589;
-    color: white;
-    font-weight: 600;
-    padding: 0.85em 1.4em;
-    border-radius: 999px;
-    text-decoration: none;
+    max-width: 20em;
+    color: whitesmoke;
+    padding-top: 2em;
     font-size: 1.1em;
-    font-family: Geologica, sans-serif;
-    display: inline-block;
-    box-shadow: 0 8px 24px rgba(250, 149, 137, 0.35);
-    transition: transform .15s ease, box-shadow .2s ease, filter .2s ease;
-}
-
-.btn-primary:hover {
-    transform: translateY(-1px);
-}
-
-.btn-primary:active {
-    transform: translateY(0);
+    padding-bottom: 3em;
 }
 
 .home-img {
-    position: absolute;
-    right: clamp(0.5em, 3vw, 2em);
-    bottom: clamp(0.5em, 3vw, 2em);
-    display: block;
-    pointer-events: none;
+   margin-top: -15em;
+   padding-left: 6.5em;
+   margin-bottom: -0.25em;
+   height: 37em;
 }
 
-.home-img img {
-    display: block;
-    width: clamp(18em, 38vw, 28em);
-    height: auto;
-    filter: drop-shadow(0 24px 60px rgba(0,0,0,0.35));
-}
-
-@media (min-width: 600px) {
-    .p1 {
-        padding: clamp(2.5em, 5vw, 5em) clamp(1.25em, 4vw, 3em);
-        min-height: 75vh;
-    }
-
-    .p1-content {
-        min-width: 64ch;
-    }
-
-    .p1 h1 {
-        font-size: clamp(2.25em, 0.5em, 3.5em);
-    }
-
-    .p1 p {
-        font-size: clamp(1.05em, 2vw, 1.2em);
-    }
-
-    .home-img img {
-        width: clamp(20em, 42vw, 30em);
-    }
-}
-
-@media (min-width: 900px) {
-    .p1 {
-        padding: clamp(3em, 6vw, 6em) clamp(2em, 6vw, 4em);
-        min-height: 80vh;
-    }
-
-    .p1-content {
-        min-width: 66ch;
-    }
-
-    .p1 h1 {
-        font-size: clamp(2.5em, 0.5em, 4em);
-    }
-
-    .p1 p {
-        font-size: clamp(1.1em, 1.8vw, 1.25em);
-    }
-
-    .home-img img {
-        width: clamp(22em, 40vw, 32em);
-    }
+.btn-primary {
+    text-decoration: none;
+    color: white;
+    background-color: #FA9589;
+    border-radius: 2em;
+    padding-left: 1.6em;
+    padding-right: 1.6em;
+    padding-bottom: 0.6em;
+    padding-top: 0.6em;
+    transition: all 0.2s ease-in-out;
+    position: relative;
 }
 
 .p2 {
@@ -347,6 +273,11 @@ nav {
     margin-top: 2em;
 }
 
+.typ-ideeen::placeholder {
+    color: white;
+    opacity: 0.7;
+}
+
 .btn-ideeen {
     background: #151e3f;
     color: white;
@@ -392,63 +323,89 @@ nav {
     margin-right: auto;
 }
 
+.p-contact {
+    background-color: #151E3F;
+    margin-top: -2.2em;
+}
+
 .contact {
-    padding: 4em 2em;
-    background-color: #151e3f;
     text-align: center;
+    color: white;
 }
 
 .contact h2 {
-    font-size: 2em;
-    font-family: Geologica, sans-serif;
-    font-weight: 700;
-    margin-bottom: 0.5em;
+    font-size: 2.5em;
+    padding-bottom: 1em;
 }
 
-.contact c form {
-    margin-top: 2em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5em;
+.contact form div {
+    position: relative;
+}
+
+.contact input {
+    border: solid white;
+    background-color: transparent;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    font-size: 1em;
+    outline: none;
+    margin: 2em;
+    width: 25em;
+    color: white;
+    caret-color: white;
+
 }
 
 .contact label {
-    font-size: 1em;
-    font-family: Geologica, sans-serif;
-    font-weight: 600;
-    margin-bottom: 0.5em;
+    position: absolute;
+    padding-left: 2em;
+
 }
 
-.contact input, .contact textarea {
-    width: 80%;
-    max-width: 20em;
-    padding: 0.8em 1em;
-    border-radius: 2em;
-    border: none;
+.contact textarea {
+    border: solid white;
+    background-color: transparent;
+    border-radius: 0.5em;
+    padding: 0.5em;
     font-size: 1em;
-    font-family: Geologica, sans-serif;
-}
-
-.contact button {
-    background: #FA9589;
+    outline: none;
+    margin: 2em;
+    width: 25em;
+    height: 10em;
     color: white;
-    font-weight: 600;
-    padding: 0.8em 1.6em;
-    border-radius: 2em;
+    caret-color: white;
+}
+
+.contact-btn {
     text-decoration: none;
-    font-size: 1.1em;
-    font-family: Geologica, sans-serif;
+    color: white;
+    background-color: #FA9589;
+    border-radius: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0.6em;
+    padding-top: 0.6em;
+    transition: all 0.2s ease-in-out;
+    position: relative;
     display: inline-block;
+}
+
+.contact-btn button {
     border: none;
+    background: none;
+    color: white;
+    font-size: 1em;
     cursor: pointer;
-    margin-top: 1em;
 }
 
 .info {
     padding: 4em 2em;
     text-align: center;
-    background-color: #151e3f;
+    background-color: #FA9589;
+    border-radius: 2.5em;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 5em;
 }
 
 .info h2 {
@@ -468,15 +425,6 @@ nav {
     margin-right: auto;
 }
 
-.info img {
-    width: clamp(1em, 4vw, 2em);
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin: 1.5em auto 0 auto;
-}
-
 footer {
     background: #151e3f;
     color: white;
@@ -484,3 +432,7 @@ footer {
     padding: 2em 1em;
     font-size: 0.9em;
 }
+
+
+
+
