@@ -134,8 +134,9 @@ nav {
 }
 
 .home-img {
+    max-width: 30em;
     margin-top: -15em;
-   padding-left: 0;
+   margin-left: 0em;
    margin-bottom: -0.25em;
    height: 37em;
 }
