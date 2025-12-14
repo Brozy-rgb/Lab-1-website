@@ -4,6 +4,15 @@ html {
     scroll-behavior: smooth;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -160,6 +169,12 @@ nav {
     position: relative;
 }
 
+@media (min-width:600px) {
+    .home-img {
+        margin-left: 10em;
+    }
+}
+
 @media (min-width: 700px) {
     .p1 {
         display: flex;
@@ -194,30 +209,64 @@ nav {
 
 @media (min-width: 1000px) {
     .p1 {
+        width: 100%;
+        background: url(images/rain.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: clamp(0.75em, 2vw, 11.25em);
-        margin: 0;
-        padding: 0 1em;
+        gap: clamp(0.8em, 1.8vw, 1.4em);
+        padding: 4em 2em;
+        overflow: hidden;
+    }
+
+    .p1-inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: clamp(0.75em, 2vw, 1.5em);
+        max-width: 1200px;
+        width: 100%;
+        padding: 4em 2em;
+        margin: 0 auto;
     }
 
     .p1 h1 {
-        font-size: 4em;
-        max-width: 40em;
+        font-size: clamp(2.5em, 5vw, 5em);
+        line-height: 1.1;
+        margin: 0 0 0.5em 0;
+        color: white;
+        width: 8em;
+        padding-left: 2em;
     }
 
     .p1 p {
-        font-size: 1.2em;
-        max-width: 40em;
-        padding-right: 0;
+        font-size: clamp(1em, 1.4vw, 1.35em);
+        max-width: 50em;
+        margin: 0 0 2em 0;
+        padding: 0;
+        color: white;
+        padding-left: 7.5em;
+    }
+        
+    .home-img {
+        display: block;
+        flex: 0 0 auto;
+        width: auto;
+        max-width: none;
+        height: clamp(20em, 48vw, 52em);
+        margin: 0;
+        transform: translateY(130px);
+        object-fit: contain;
     }
 
-    .home-img {
-        margin-top: -10em;
-        margin-left: 0;
-        height: 40em;
-        flex: 0 0 auto;
+    .btn-primary {
+        display: inline-block;
+        margin: 0.6em 0 0 0;
+        position: static;
+        margin-left: 10em;
     }
 }
 
@@ -488,6 +537,7 @@ nav {
 .waarden {
     padding: 4em 2em;
     text-align: center;
+    margin-bottom: 5em;
 }
 
 .waarden h2 {
@@ -526,6 +576,7 @@ nav {
         max-width: 1100px;
         margin-inline: auto;
         text-align: center;
+        margin-bottom: 5em;
     } 
 
     .waarden > h2 {
@@ -629,6 +680,7 @@ nav {
     width: fit-content;
     margin: 0 auto;
     margin-top: 5em;
+    margin-bottom: 5em;
 }
 
 .info h2 {
@@ -695,18 +747,33 @@ nav {
         margin: 0;
         padding: 3em 2em;
         border-radius: 2.5em;
+        padding-bottom: 2em;
+    }
+
+    .info h2 {
+        padding-bottom: 1em;
     }
 
     .info-input {
-        display: flex;
+        display: grid;
+        grid-template-columns: 28px 1fr;
         align-items: center;
-        gap: 0.75em;
-        justify-content: center;
+        column-gap: 0.75em;
+    }
+
+    .info-input p {
+        text-align: left;
     }
 
     .info-input img {
         width: 24px;
         height: 24px;
+        display: block;
+        margin-bottom: 1.5em;
+    }
+
+    .info-input + .info-input {
+        margin-top: 1.25em;
     }
 }
 
